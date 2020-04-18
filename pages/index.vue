@@ -1,6 +1,44 @@
 <template lang="pug">
 div
 
+  .grid
+    .item-a.mb-3
+      h1.text_x5 item-a
+      .text_x3 ЕГАИС, R-Keeper, StoreHouse, ККМ по 54-ФЗ
+    .item-b
+      h1.mb-3 item-b
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+      h4 Blanditiis nisi commodi illo
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo,
+    .item-c.mb-3
+      h1.mb-3 item-c
+      p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
+      p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
+    .item-d
+      h1.mb-3 item-d
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+    .item-e
+      h1.mb-3 item-e
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+    .item-f
+      h1.mb-3 item-f
+      p.mb-3 Digital audits, facilitated design thinking workshops, 
+    .item-g
+      h1.mb-3 item-g
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website 
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+      h4 Blanditiis nisi commodi illo
+    .item-h
+      h1.mb-3 item-h
+      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research
+      h4 Blanditiis nisi commodi illo
+      h3 facilitated design thinking workshops, digital strategy development
+    .item-i
+      h1.mb-3 item-i
+      p.mb-3 Digital audits, facilitated design thinking workshops, 
+
   h2.text_x5.center Наши партнеры
   .clients-grid
     img(
@@ -26,7 +64,7 @@ export default {
 
 <style>
 .clients-grid {
-  padding: 2em;
+  padding: 1.4em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   /* grid-template-rows: repeat(auto-fill, minmax(180px,1fr)); */
@@ -40,4 +78,170 @@ export default {
 
 /* .clients-grid_item {
 } */
+
+.grid {
+  padding: 1.4em;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px auto;
+}
+.grid > div {
+  padding: 1em;
+}
+.item-a {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.item-b {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.item-c {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border: 1px solid #ccc;
+}
+
+.item-d {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.item-e {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.item-f {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-g {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-h {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.item-i {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+@media (min-width: 1000px) {
+  .item-a {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .item-b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+
+  .item-c {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    border: 1px solid #ccc;
+  }
+
+  .item-d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+
+  .item-e {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .item-f {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    border-left: 1px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .item-g {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .item-h {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+
+  .item-i {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+}
 </style>
