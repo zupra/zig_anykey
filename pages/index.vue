@@ -3,19 +3,39 @@ div
 
   .grid
     .item-a.mb-3
-      h1.text_x5 item-a
-      .text_x3 ЕГАИС, R-Keeper, StoreHouse, ККМ по 54-ФЗ
+      h1.text_x3 Anykey.eXpert
+      .text_x6.vintage ЕГАИС
+        br
+        | R-Keeper
+        br
+        | StoreHouse
+        br
+        | ККМ по 54-ФЗ
     .item-b
       h1.mb-3 item-b
+      img(
+        :src="require(`@/static/fallout/сash_register.png`)"
+      )
       p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-      h4 Blanditiis nisi commodi illo
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo,
+      //- img(
+      //-   style="width: 100%;"
+      //-   :src="require(`@/static/fallout/fallout-robot.png`)"
+      //- )
     .item-c.mb-3
       h1.mb-3 item-c
       p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
       p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
+      //- img(
+      //-   style="width: 100%;"
+      //-   :src="require(`@/static/fallout/fallout-syringe.png`)"
+      //- )
+      h2.center.my-2 Автоматизация
+      img(
+        style="width: 100%;"
+        :src="require(`@/static/fallout/fallout-robot.png`)"
+      )
     .item-d
       h1.mb-3 item-d
       p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
@@ -39,12 +59,13 @@ div
       h1.mb-3 item-i
       p.mb-3 Digital audits, facilitated design thinking workshops, 
 
-  h2.text_x5.center Наши партнеры
-  .clients-grid
-    img(
-      v-for="img in ['288.jpg','4560.jpg','Бардак.jpg','Дом_Кафе.jpg','Компот.jpg','Кружка.jpg','МаПицца.png','Оджахури.jpg','Пилпили.png','Рикису.png','Bjorn.jpg','Bolshoi.png','BoraBora.png','CureBar.jpg','Ess-Thetik.png','Fresh.jpg','Lari.jpg','LookCafe.jpg','LureMe.jpg','Megobari.png','Piccola_Italia.jpg','Vаниль.png','Zagorami.jpg']"
-      :src="require(`@/static/clients_logo/x240q80_${img}`)"
-    )
+  .clients
+    h2.text_x5.center.mb-3 Наши партнеры
+    .clients_grid
+      img(
+        v-for="img in ['288.jpg','4560.jpg','Бардак.jpg','Дом_Кафе.jpg','Компот.jpg','Кружка.jpg','МаПицца.png','Оджахури.jpg','Пилпили.png','Рикису.png','Bjorn.jpg','Bolshoi.png','BoraBora.png','CureBar.jpg','Ess-Thetik.png','Fresh.jpg','Lari.jpg','LookCafe.jpg','LureMe.jpg','Megobari.png','Piccola_Italia.jpg','Vаниль.png','Zagorami.jpg']"
+        :src="require(`@/static/clients_logo/x240q80_${img}`)"
+      )
 
 
 
@@ -62,33 +83,53 @@ export default {
 }
 </script>
 
-<style>
-.clients-grid {
-  padding: 1.4em;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  /* grid-template-rows: repeat(auto-fill, minmax(180px,1fr)); */
-  grid-auto-flow: dense;
-  grid-gap: 20px;
-  align-items: center;
+<style lang="stylus">
+.vintage {
+  padding: 1rem;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1;
+  /* transform: rotate(-10deg); */
+  transform: skewY(-6deg);
+  /* text-shadow: .1em .1em 0px #f0e8db, 8px 8px 0px #6c5257; */
+  text-shadow: 0.1em 0.1em 0 rgba(47, 22, 80, 0.6);
+  /* color: #962f42; */
+  color: #f3efe9;
+  text-align: right;
+  background: url('https://www.pinclipart.com/picdir/big/202-2027371_charisma-fallout-4-vault-boy-a5-notebook-clipart.png') 0 0 / contain no-repeat, linear-gradient(rgba(255, 130, 0, 0.2), rgba(47, 22, 96, 0.04)), linear-gradient(rgba(255, 224, 180, 0.37), rgba(255, 224, 180, 0.37));
 }
-.clients-grid img {
-  width: 100%;
+
+.clients {
+  background-color: #fffff9;
+  padding: 2.2em 1.4em;
+
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(180px,1fr)); */
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 /* .clients-grid_item {
 } */
-
 .grid {
   padding: 1.4em;
-  max-width: 1000px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 50px auto;
 }
+
 .grid > div {
   padding: 1em;
 }
+
 .item-a {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -156,7 +197,7 @@ export default {
   border-right: 1px solid #ccc;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 860px) {
   .item-a {
     grid-column-start: 1;
     grid-column-end: 5;

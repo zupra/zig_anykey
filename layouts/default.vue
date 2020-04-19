@@ -5,20 +5,32 @@
   footer#layout_footer.flex.y_center.x_sb
     //- Anykey.eXpert
     p © 2020
+      span.blink _ >
     div
-      img(
-        src="https://icongr.am/devicon/chrome-original.svg?size=48"
-      )
-      img.mx-2(
-        src="https://icongr.am/devicon/chrome-original.svg?size=48"
-      )
-      img(
-        src="https://icongr.am/devicon/chrome-original.svg?size=48"
-      )
+      a(
+        href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+      ) WhatsApp
+
+      a.mx-3(
+        href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+      ) Telegram
+
 
 </template>
 
 <style>
+.blink {
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #layout {
   display: grid;
   height: 100vh;
@@ -39,9 +51,19 @@
 
 #layout_footer {
   grid-area: footer;
-  background-color: #000;
   color: #fff;
-  padding: 4px 1em;
-  /* border-top: 1px solid #e3e5e8; */
+  padding: 1em;
+  /* background-image: radial-gradient(
+    at 300px 300px,
+    rgba(159, 0, 191, 0.9) 0,
+    #4d4fa7 70%
+  ); */
+  background-color: #000;
+  font-family: 'Courier';
+
+  color: lime;
+}
+#layout_footer a {
+  color: lime;
 }
 </style>
