@@ -1,8 +1,7 @@
 <template lang="pug">
+
 #layout
-  #layout_main
-    <nuxt />
-  footer#layout_footer.flex.y_center.x_sb
+  #layout_footer.flex.y_center.x_sb
     //- Anykey.eXpert
     p © 2020
       span.blink _ >
@@ -14,9 +13,41 @@
       a.mx-3(
         href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
       ) Telegram
+  #layout_main 
+    <nuxt />
+//-
+  #layout
+    #layout_main
+      <nuxt />
+    footer#layout_footer.flex.y_center.x_sb
+      //- Anykey.eXpert
+      p © 2020
+        span.blink _ >
+      div
+        a(
+          href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+        ) WhatsApp
+
+        a.mx-3(
+          href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+        ) Telegram
 
 
 </template>
+
+<demo lang="stylus">
+#layout_TopNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  color: #fff;
+  padding: 1em;
+  background-color: #000;
+  font-family: 'Courier';
+}
+</demo>
 
 <style>
 .blink {
@@ -39,8 +70,8 @@
   grid-template-rows: auto auto;
 
   grid-template-areas:
-    'main'
-    'footer';
+    'footer'
+    'main';
 }
 
 #layout_main {

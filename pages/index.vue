@@ -98,6 +98,11 @@ export default {
   background: url('https://www.pinclipart.com/picdir/big/202-2027371_charisma-fallout-4-vault-boy-a5-notebook-clipart.png') 0 0 / contain no-repeat, linear-gradient(rgba(255, 130, 0, 0.2), rgba(47, 22, 96, 0.04)), linear-gradient(rgba(255, 224, 180, 0.37), rgba(255, 224, 180, 0.37));
 }
 
+img {
+  display: inline-block;
+  width: 100%;
+}
+
 .clients {
   background-color: #fffff9;
   padding: 2.2em 1.4em;
@@ -109,10 +114,12 @@ export default {
     grid-auto-flow: dense;
     grid-gap: 20px;
     align-items: center;
+  }
+}
 
-    img {
-      width: 100%;
-    }
+@media (max-width: 420px) {
+  .clients_grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   }
 }
 
