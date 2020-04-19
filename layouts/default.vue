@@ -3,9 +3,10 @@
 #layout
   #layout_footer.flex.y_center.x_sb
     //- Anykey.eXpert
-    p © 2020
-      span.blink _ >
+    p © 2020 Anykey.eXpert 
+      
     div
+      span.blink _> 
       a(
         href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
       ) WhatsApp

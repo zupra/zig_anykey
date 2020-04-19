@@ -3,20 +3,17 @@ div
 
   .grid
     .item-a.mb-3
-      h1.text_x3 Anykey.eXpert
-      .text_x6.vintage ЕГАИС
+      .text_x3 anykey expert
+      h1.text_x5 ЕГАИС
         br
         | R-Keeper
         br
         | StoreHouse
         br
         | ККМ по 54-ФЗ
-    .item-b
-      h1.mb-3 item-b
-      img(
-        :src="require(`@/static/fallout/сash_register.png`)"
-      )
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+    .item-b.white 
+      h1.text_x3.mb-3 Автоматизация ресторанов баров и кафе
+      .text_x2 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
       //- img(
       //-   style="width: 100%;"
       //-   :src="require(`@/static/fallout/fallout-robot.png`)"
@@ -42,7 +39,7 @@ div
     .item-e
       h1.mb-3 item-e
       p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-    .item-f
+    .item-f.white
       h1.mb-3 item-f
       p.mb-3 Digital audits, facilitated design thinking workshops, 
     .item-g
@@ -52,9 +49,9 @@ div
       h4 Blanditiis nisi commodi illo
     .item-h
       h1.mb-3 item-h
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research
-      h4 Blanditiis nisi commodi illo
-      h3 facilitated design thinking workshops, digital strategy development
+      .text_s1.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research
+      .text_x2 Blanditiis nisi commodi illo
+      h2.text_s2 facilitated design thinking workshops, digital strategy development
     .item-i
       h1.mb-3 item-i
       p.mb-3 Digital audits, facilitated design thinking workshops, 
@@ -84,23 +81,30 @@ export default {
 </script>
 
 <style lang="stylus">
-.vintage {
-  padding: 1rem;
-  font-family: 'Exo 2', sans-serif;
-  line-height: 1;
-  /* transform: rotate(-10deg); */
-  transform: skewY(-6deg);
-  /* text-shadow: .1em .1em 0px #f0e8db, 8px 8px 0px #6c5257; */
-  text-shadow: 0.1em 0.1em 0 rgba(47, 22, 80, 0.6);
-  /* color: #962f42; */
-  color: #f3efe9;
-  text-align: right;
-  background: url('https://www.pinclipart.com/picdir/big/202-2027371_charisma-fallout-4-vault-boy-a5-notebook-clipart.png') 0 0 / contain no-repeat, linear-gradient(rgba(255, 130, 0, 0.2), rgba(47, 22, 96, 0.04)), linear-gradient(rgba(255, 224, 180, 0.37), rgba(255, 224, 180, 0.37));
-}
-
+// .vintage {
+// padding: 1rem;
+// font-family: 'Exo 2', sans-serif;
+// line-height: 1;
+// /* transform: rotate(-10deg); */
+// transform: skewY(-6deg);
+// /* text-shadow: .1em .1em 0px #f0e8db, 8px 8px 0px #6c5257; */
+// text-shadow: 0.1em 0.1em 0 rgba(47, 22, 80, 0.6);
+// /* color: #962f42; */
+// color: #f3efe9;
+// text-align: right;
+// background: url('https://www.pinclipart.com/picdir/big/202-2027371_charisma-fallout-4-vault-boy-a5-notebook-clipart.png') 0 0 / contain no-repeat, linear-gradient(rgba(255, 130, 0, 0.2), rgba(47, 22, 96, 0.04)), linear-gradient(rgba(255, 224, 180, 0.37), rgba(255, 224, 180, 0.37));
+// }
 img {
   display: inline-block;
   width: 100%;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+.white {
+  color: white;
 }
 
 .clients {
@@ -123,14 +127,12 @@ img {
   }
 }
 
-/* .clients-grid_item {
-} */
 .grid {
   padding: 1.4em;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 50px auto;
+  margin: 2rem auto;
 }
 
 .grid > div {
@@ -148,6 +150,7 @@ img {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') 0 0 / cover no-repeat;
 }
 
 .item-c {
@@ -173,6 +176,7 @@ img {
 }
 
 .item-f {
+  background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') center / cover no-repeat;
   grid-column-start: 1;
   grid-column-end: span 4;
   border-left: 1px solid #ccc;
@@ -224,6 +228,7 @@ img {
   }
 
   .item-c {
+    height: 100%;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
