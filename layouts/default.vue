@@ -6,7 +6,7 @@
     p © 2020 Anykey.eXpert 
       
     div
-      span.blink _> 
+      //- span.blink _> 
       a(
         href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
       ) WhatsApp
@@ -16,6 +16,7 @@
       ) Telegram
   #layout_main 
     <nuxt />
+    Footer
 //-
   #layout
     #layout_main
@@ -50,6 +51,16 @@
 }
 </demo>
 
+<script>
+import Footer from '~/components/Footer.vue'
+
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
+
 <style>
 .blink {
   animation: blink 1s linear infinite;
@@ -82,18 +93,21 @@
 }
 
 #layout_footer {
+  z-index: 10;
   grid-area: footer;
-  color: #fff;
   padding: 1em;
   /* background-image: radial-gradient(
     at 300px 300px,
     rgba(159, 0, 191, 0.9) 0,
     #4d4fa7 70%
   ); */
-  background-color: #000;
+  /* background-color: #000;
+  color: #fff; */
+  /* box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   font-family: 'Courier';
 
-  color: lime;
+  /* color: lime; */
 }
 #layout_footer a {
   color: lime;
