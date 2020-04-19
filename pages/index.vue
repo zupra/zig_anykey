@@ -2,8 +2,10 @@
 div
 
   .grid
-    .item-a.mb-3
-      .text_x3 anykey expert
+    .item-a
+      //- .text_x3 anykey expert
+      //- h1.text_x5Автоматизация ресторанов баров и кафе
+
       h1.text_x5 ЕГАИС
         br
         | R-Keeper
@@ -11,14 +13,14 @@ div
         | StoreHouse
         br
         | ККМ по 54-ФЗ
-    .item-b.white 
-      h1.text_x3.mb-3 Автоматизация ресторанов баров и кафе
+    .item-b.white.bold
+      .text_x3.mb-3 Автоматизация ресторанов баров и кафе
       .text_x2 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
       //- img(
       //-   style="width: 100%;"
       //-   :src="require(`@/static/fallout/fallout-robot.png`)"
       //- )
-    .item-c.mb-3
+    .item-c
       h1.mb-3 item-c
       p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
@@ -29,10 +31,10 @@ div
       //-   :src="require(`@/static/fallout/fallout-syringe.png`)"
       //- )
       h2.center.my-2 Автоматизация
-      img(
-        style="width: 100%;"
-        :src="require(`@/static/fallout/fallout-robot.png`)"
-      )
+      //- img(
+      //-   style="width: 100%;"
+      //-   :src="require(`@/static/fallout/fallout-robot.png`)"
+      //- )
     .item-d
       h1.mb-3 item-d
       p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
@@ -81,28 +83,14 @@ export default {
 </script>
 
 <style lang="stylus">
-// .vintage {
-// padding: 1rem;
-// font-family: 'Exo 2', sans-serif;
-// line-height: 1;
-// /* transform: rotate(-10deg); */
-// transform: skewY(-6deg);
-// /* text-shadow: .1em .1em 0px #f0e8db, 8px 8px 0px #6c5257; */
-// text-shadow: 0.1em 0.1em 0 rgba(47, 22, 80, 0.6);
-// /* color: #962f42; */
-// color: #f3efe9;
-// text-align: right;
-// background: url('https://www.pinclipart.com/picdir/big/202-2027371_charisma-fallout-4-vault-boy-a5-notebook-clipart.png') 0 0 / contain no-repeat, linear-gradient(rgba(255, 130, 0, 0.2), rgba(47, 22, 96, 0.04)), linear-gradient(rgba(255, 224, 180, 0.37), rgba(255, 224, 180, 0.37));
-// }
 img {
   display: inline-block;
   width: 100%;
 }
 
-h1, h2 {
-  font-weight: 900;
-}
-
+// h1, h2 {
+// font-weight: 900;
+// }
 .white {
   color: white;
 }
@@ -131,170 +119,159 @@ h1, h2 {
   padding: 1.4em;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
   margin: 2rem auto;
 }
 
 .grid > div {
   padding: 1em;
+  border: 1px solid #ccc;
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12);
 }
 
-.item-a {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
+// .item-a {
+// grid-column-start: 1;
+// grid-column-end: 5;
+// }
 .item-b {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-top: 1px solid #ccc;
+  // border-left: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
   background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') 0 0 / cover no-repeat;
 }
 
 .item-c {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border: 1px solid #ccc;
 }
 
 .item-d {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-left: 1px solid #ccc;
+  // border-bottom: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
 }
 
 .item-e {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-bottom: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
+  // border-left: 1px solid #ccc;
 }
 
 .item-f {
   background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') center / cover no-repeat;
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-left: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
+  // border-bottom: 1px solid #ccc;
 }
 
 .item-g {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-left: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
+  // border-bottom: 1px solid #ccc;
 }
 
 .item-h {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-left: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
 }
 
 .item-i {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  border-left: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  // grid-column-start: 1;
+  // grid-column-end: span 4;
+  // border-left: 1px solid #ccc;
+  // border-top: 1px solid #ccc;
+  // border-bottom: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
 }
 
 @media (min-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, auto);
+  }
+
   .item-a {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
   }
 
   .item-b {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: none;
+    grid-column: 1 / 3;
+    grid-row: 3 / 6;
+    // border-top: 1px solid #ccc;
+    // border-left: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // border-right: none;
   }
 
   .item-c {
-    height: 100%;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 7;
-    border: 1px solid #ccc;
+    // height: 100%;
+    grid-column: 3 / 5;
+    grid-row: 3 / 7;
+    // border: 1px solid #ccc;
   }
 
   .item-d {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 8;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    grid-column: 1 / 2;
+    grid-row: 6 / 8;
+    // border-left: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // border-right: 1px solid #ccc;
   }
 
   .item-e {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 8;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
+    grid-column: 2 / 3;
+    grid-row: 6 / 8;
+    // border-left: none;
+    // border-right: none;
+    // border-bottom: 1px solid #ccc;
   }
 
   .item-f {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 7;
-    grid-row-end: 9;
-    border-left: 1px solid #ccc;
-    border-bottom: none;
-    border-right: none;
+    grid-column: 3 / 4;
+    grid-row: 7 / 9;
+    // border-left: 1px solid #ccc;
+    // border-bottom: none;
+    // border-right: none;
   }
 
   .item-g {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 7;
-    grid-row-end: 11;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    grid-column: 4 / 5;
+    grid-row: 7 / 11;
+    // border-left: 1px solid #ccc;
+    // border-right: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
   }
 
   .item-h {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 8;
-    grid-row-end: 11;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: none;
+    grid-column: 1 / 3;
+    grid-row: 8 / 11;
+    // border-left: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // border-right: none;
   }
 
   .item-i {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 9;
-    grid-row-end: 11;
-    border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: none;
+    grid-column: 3 / 4;
+    grid-row: 9 / 11;
+    // border-left: 1px solid #ccc;
+    // border-top: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // border-right: none;
   }
 }
 </style>

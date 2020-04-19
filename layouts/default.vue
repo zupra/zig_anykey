@@ -2,16 +2,16 @@
 
 #layout
   #layout_footer.flex.y_center.x_sb
-    //- Anykey.eXpert
-    p © 2020 Anykey.eXpert 
+    //- © 2020 Anykey.eXpert
+    | Anykey.eXpert 
       
-    div
+    .bold_900
       //- span.blink _> 
-      a(
+      a.mx-3(
         href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
       ) WhatsApp
 
-      a.mx-3(
+      a(
         href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
       ) Telegram
   #layout_main 
@@ -37,20 +37,6 @@
 
 </template>
 
-<demo lang="stylus">
-#layout_TopNav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  color: #fff;
-  padding: 1em;
-  background-color: #000;
-  font-family: 'Courier';
-}
-</demo>
-
 <script>
 import Footer from '~/components/Footer.vue'
 
@@ -62,18 +48,6 @@ export default {
 </script>
 
 <style>
-.blink {
-  animation: blink 1s linear infinite;
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #layout {
   display: grid;
   height: 100vh;
@@ -110,6 +84,6 @@ export default {
   /* color: lime; */
 }
 #layout_footer a {
-  color: lime;
+  color: #9c27b0;
 }
 </style>

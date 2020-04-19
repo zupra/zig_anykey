@@ -1,75 +1,61 @@
-// Button
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// >>> ACTIONS ====
 
-.button,
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit']
-	background-color: color-primary
-	border: .1rem solid color-primary
-	border-radius: .4rem
-	color: color-initial
-	cursor: pointer
-	display: inline-block
-	font-size: 1.1rem
-	font-weight: 700
-	letter-spacing: .1rem
-	height: 3.8rem
-	line-height: 3.8rem
-	padding: 0 3.0rem
-	text-align: center
-	text-decoration: none
-	text-transform: uppercase
-	white-space: nowrap
-	user-select none
+$blue = #1fb6ff
 
-	&:focus,
-	&:hover
-		background-color: color-secondary
-		border-color: color-secondary
-		color: color-initial
-		outline: 0
+a, .link
+  color $blue
+  text-decoration: none
+  transition: color .3s
+  &.circle
+    padding: .7em 1.4em
+    border: 2px solid $blue
+    border-radius: 3em
+    transition: all .3s
+    &:hover
+      color #FFF
+      background: $blue
 
-	&[disabled]
-		cursor: default
-		opacity: .5
+.link, .circle
+  display: inline-block
 
-		&:focus,
-		&:hover
-			background-color: color-primary
-			border-color: color-primary
 
-	&.button-outline
-		background-color: transparent
-		color: color-primary
 
-		&:focus,
-		&:hover
-			background-color: transparent
-			border-color: color-secondary
-			color: color-secondary
+button
+  border 0
+  cursor: pointer
+  color: #FFF
 
-		&[disabled]
+  &.btn
+    background: $blue
+    font-size 1.2em
+    margin .4em 0
+    &:hover
+      background: $blue - 12%
 
-			&:focus,
-			&:hover
-				border-color: inherit
-				color: color-primary
+button, a.btn
+  border-bottom 3px solid rgba(#000 .1)
+  border-radius .4em
 
-	&.button-clear
-		background-color: transparent
-		border-color: transparent
-		color: color-primary
+  padding .4em 1em
+  transition: background .3s
+  &:hover
+    border-bottom-color rgba(#000 .3)
 
-		&:focus,
-		&:hover
-			background-color: transparent
-			border-color: transparent
-			color: color-secondary
+a.green
+  background: $green
+  //padding: .5em 1em
+  &:hover
+    background: $green - 8%
 
-		&[disabled]
+a.btn
+  display inline-block
+  white-space: nowrap
 
-			&:focus,
-			&:hover
-				color: color-primary
+  color #FFF
+  text-decoration none !important
+
+button, .btn
+  &[disabled]
+    background #e4e4e4
+    color #262626 !important
+    cursor wait //progress

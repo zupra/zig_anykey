@@ -1,59 +1,46 @@
 <template lang="pug">
 #footer
-  #F_grid
+  #F_grid 
+
     form.fgItem(ref="ftr_form")
       input.mb-2(
         type="tel"
         placeholder="* Телефон"
       )
       textarea(placeholder="Сообщение")
-      button(@click.prevent="submit()") Отправить
+      button.btn(@click.prevent="") Отправить
 
-    .fgItem
+    div
       h4 Eсть вопросы или предложения?
-      p Оставьте сообщение которое сразу придёт нам в SMS. Если это важно или интересно — мы оперативно ответим.
-    
-    .fgItem
-      h4 Пообщаемся в СоцСетях?
-      .Socials-icon.flex
-        a(href="//vk.com/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_vk')
-          //| vkontakte
-        a(href="//facebook.com/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_fb')
-          //| facebook
-        a(href="//instagram.com/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_instagram')
-          //| instagram
+      p Оставьте сообщение которое сразу придёт нам в SMS.
+      
 
 
-    .fgItem
-      //- h4 OOO «
-      //-   b ВИНСТОН
-      //-   |»
+    div
+      h4 Адрес
       | г. Москва, Покровка 3/7
       br
-      | тел.: +7(495) 64-255-64
+      | тел.: 
+      b 8(495)199-57-89
       br
       | режим работы: Пн-Пт
       br
       | с 10-20 часов
       br
       | Сб-Вс - выходной
-    .fgItem
+
+    div
       h4 Инфо
+
       nuxt-link(to="/#") О компании
       //-   a(href="/#") Обмен и возврат
       nuxt-link(to="/#") Отзывы
-      nuxt-link(to="/contacts") Контакты
-      nuxt-link(to="/cooperation") Сотрудничество
+      nuxt-link(to="/#") Контакты
+      nuxt-link(to="/#") Сотрудничество
       //- a(href="#") Узнать статус заказа
 
 
-    .fgItem.Socials-icon
+    .Socials-icon
       h4 Поделиться
       a(href="/#")
         svg.icon
@@ -98,14 +85,15 @@ export default {
   background: #444;
   padding: 3em 0;
   color: #EEE;
+  line-height: 1.6;
 
   h4 {
     color: #FFF;
-    line-height: 1;
+    // line-height: 1;
   }
 
   a {
-    color: #cddc39;
+    color: #FFF; // #cddc39;
     display: block;
 
     &:hover {
@@ -114,21 +102,18 @@ export default {
   }
 }
 
+/*  */
 #F_grid {
   max-width: 1080px;
   margin: auto;
   padding: 0 1em;
+  display: grid;
+  grid-gap: 2rem;
 
   @media screen and (min-width: 620px) {
     // background #000
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
   }
-}
-
-.fgItem {
-  margin: 2em 1em;
 }
 
 .Socials-icon {
