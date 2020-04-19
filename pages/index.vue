@@ -2,20 +2,24 @@
 div
 
   .grid
-    .item-a
+    .item-a.white
       //- .text_x3 anykey expert
       //- h1.text_x5Автоматизация ресторанов баров и кафе
 
-      h1.text_x5 ЕГАИС
-        br
-        | R-Keeper
-        br
-        | StoreHouse
-        br
-        | ККМ по 54-ФЗ
-    .item-b.white.bold
-      .text_x3.mb-3 Автоматизация ресторанов баров и кафе
-      .text_x2 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+      h1.text_x5
+        span.BG
+          | ЕГАИС
+          br
+          | R-Keeper
+          br
+          | StoreHouse
+          br
+          | ККМ по 54-ФЗ
+    .item-b.white.bold.flex_col.x_sb
+      
+      .text_x3 Автоматизация ресторанов
+
+      .BG.mt_auto Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
       //- img(
       //-   style="width: 100%;"
       //-   :src="require(`@/static/fallout/fallout-robot.png`)"
@@ -26,9 +30,13 @@ div
       .mb-2.text_x4 8(495)199-57-89
       .mb-3 Если у вас возникла срочная проблема, которая останавливает работу заведения
       .mb-3 У нас всегда дежурят 2 IT-пециалиста. Вы можете им звонить круглосутчно в любой день, включая праздники и выходные.
-
+      .bold_900 Автоматизация ресторанов баров и кафе
       .mb-3 Настройка удаленного рабочего места
-      p Быстро и безопасно
+      //- p Быстро и безопасно
+      img(
+        style="width: 100%;"
+        src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+      )
     .item-d
       h1.mb-3 item-d
       p В подвале телефон  - 8(495)199-57-89 и кнопка заказать звонок (клик - всплывающая форма телефон и имя и, наверное, необязательным полем с “краткая информация по вопросу”)
@@ -77,6 +85,12 @@ export default {
 </script>
 
 <style lang="stylus">
+.BG {
+  background: rgba(#000, 0.8);
+  line-height: 1;
+  padding: 0 0.3em;
+}
+
 img {
   display: inline-block;
   width: 100%;
@@ -113,20 +127,21 @@ img {
 .grid > div {
   padding: 1em;
   border: 1px solid #ccc;
+  height: 100%;
   // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
   // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12);
 }
 
-// .item-a {
-// grid-column-start: 1;
-// grid-column-end: 5;
-// }
+.item-a {
+  background: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&h=300&q=80');
+}
+
 .item-b {
-  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') 0 0 / cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80') 0 0 / cover no-repeat;
 }
 
 .item-f {
-  background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') center / cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80') center / cover no-repeat;
 }
 
 @media (min-width: 860px) {
