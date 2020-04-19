@@ -21,23 +21,17 @@ div
       //-   :src="require(`@/static/fallout/fallout-robot.png`)"
       //- )
     .item-c
-      h1.mb-3 item-c
-      p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
-      p.mb-3 Blanditiis nisi commodi illo minima quidem, molestias facere assumenda tenetur laborum fugit iure eos sint debitis error sit praesentium perspiciatis? Explicabo, corrupti.
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
-      //- img(
-      //-   style="width: 100%;"
-      //-   :src="require(`@/static/fallout/fallout-syringe.png`)"
-      //- )
-      h2.center.my-2 Автоматизация
-      //- img(
-      //-   style="width: 100%;"
-      //-   :src="require(`@/static/fallout/fallout-robot.png`)"
-      //- )
+      //- h1.mb-3 item-c
+      .bold_900.mb-1.text_x5 На связи 24/7
+      .mb-2.text_x4 8(495)199-57-89
+      .mb-3 Если у вас возникла срочная проблема, которая останавливает работу заведения
+      .mb-3 У нас всегда дежурят 2 IT-пециалиста. Вы можете им звонить круглосутчно в любой день, включая праздники и выходные.
+
+      .mb-3 Настройка удаленного рабочего места
+      p Быстро и безопасно
     .item-d
       h1.mb-3 item-d
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+      p В подвале телефон  - 8(495)199-57-89 и кнопка заказать звонок (клик - всплывающая форма телефон и имя и, наверное, необязательным полем с “краткая информация по вопросу”)
     .item-e
       h1.mb-3 item-e
       p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
@@ -52,7 +46,7 @@ div
     .item-h
       h1.mb-3 item-h
       .text_s1.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research
-      .text_x2 Blanditiis nisi commodi illo
+      .mt-4.text_x2 Blanditiis nisi commodi illo
       h2.text_s2 facilitated design thinking workshops, digital strategy development
     .item-i
       h1.mb-3 item-i
@@ -86,13 +80,6 @@ export default {
 img {
   display: inline-block;
   width: 100%;
-}
-
-// h1, h2 {
-// font-weight: 900;
-// }
-.white {
-  color: white;
 }
 
 .clients {
@@ -135,67 +122,11 @@ img {
 // grid-column-end: 5;
 // }
 .item-b {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-top: 1px solid #ccc;
-  // border-left: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
   background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') 0 0 / cover no-repeat;
-}
-
-.item-c {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border: 1px solid #ccc;
-}
-
-.item-d {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-left: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
-}
-
-.item-e {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-bottom: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
-  // border-left: 1px solid #ccc;
 }
 
 .item-f {
   background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') center / cover no-repeat;
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-left: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-}
-
-.item-g {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-left: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-}
-
-.item-h {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-left: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
-}
-
-.item-i {
-  // grid-column-start: 1;
-  // grid-column-end: span 4;
-  // border-left: 1px solid #ccc;
-  // border-top: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-  // border-right: 1px solid #ccc;
 }
 
 @media (min-width: 860px) {
@@ -212,66 +143,41 @@ img {
   .item-b {
     grid-column: 1 / 3;
     grid-row: 3 / 6;
-    // border-top: 1px solid #ccc;
-    // border-left: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
-    // border-right: none;
   }
 
   .item-c {
-    // height: 100%;
     grid-column: 3 / 5;
     grid-row: 3 / 7;
-    // border: 1px solid #ccc;
   }
 
   .item-d {
     grid-column: 1 / 2;
     grid-row: 6 / 8;
-    // border-left: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
-    // border-right: 1px solid #ccc;
   }
 
   .item-e {
     grid-column: 2 / 3;
     grid-row: 6 / 8;
-    // border-left: none;
-    // border-right: none;
-    // border-bottom: 1px solid #ccc;
   }
 
   .item-f {
     grid-column: 3 / 4;
     grid-row: 7 / 9;
-    // border-left: 1px solid #ccc;
-    // border-bottom: none;
-    // border-right: none;
   }
 
   .item-g {
     grid-column: 4 / 5;
     grid-row: 7 / 11;
-    // border-left: 1px solid #ccc;
-    // border-right: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
   }
 
   .item-h {
     grid-column: 1 / 3;
     grid-row: 8 / 11;
-    // border-left: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
-    // border-right: none;
   }
 
   .item-i {
     grid-column: 3 / 4;
     grid-row: 9 / 11;
-    // border-left: 1px solid #ccc;
-    // border-top: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
-    // border-right: none;
   }
 }
 </style>
