@@ -56,7 +56,10 @@
             use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_ok')
           | odnoklassniki
 
+
   <SocIcon/>
+  //- #F_.mt-5.p-1
+  //-   | © 2020 
 </template>
 
 <script>
@@ -76,7 +79,7 @@ export default {
   margin-top: 5em;
   // background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
   background: #333;
-  padding: 3em 0;
+  padding: 3em 0 5em;
   color: #CCC;
 
   // line-height: 1.6;
