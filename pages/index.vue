@@ -1,64 +1,119 @@
 <template lang="pug">
 div
 
-  .grid
-    .item-a.white
-      //- .text_x3 anykey expert
-      //- h1.text_x5Автоматизация ресторанов баров и кафе
+  .wrap
+    //- .flex_wr.x_sb
+    //-   h1.text_x5
+    //-     //- span.BG
+    //-     | ЕГАИС
+    //-     br
+    //-     | R-Keeper
+    //-     br
+    //-     | StoreHouse
+    //-     br
+    //-     | ККМ по 54-ФЗ
 
-      h1.text_x5
-        span.BG
-          | ЕГАИС
-          br
-          | R-Keeper
-          br
-          | StoreHouse
-          br
-          | ККМ по 54-ФЗ
-    .item-b.white.bold.flex_col.x_sb
+    //-   h2 Автоматизация
+    .grid
+      .item-a.white.bold.flex_col.x_sb.shadow
+        .text_x4
+          span.BG Автоматизация ресторанов баров и кафе
+        
+        img.filter_1(
+          src='https://static.tildacdn.com/tild3631-3632-4339-b131-663633663838/_.png'
+        )
+        .BG.mt_auto.flex_wr.x_sb
+          .fr_1.m-2
+            .text_x1.mb-1
+              span(style="color: #37b44a;") _
+              | CashDesk
+            p Кассовый модуль с интуитивно понятным интерфейсом. Позволяет быстро и точно рассчитывать гостей и проводить кассовые операции
+
+          .fr_1.m-2
+            .text_x1.mb-1
+              span(style="color: #37b44a;") _ 
+              | StoreHouse
+            p Программа складского учета поможет полностью автоматизировать процесс управления производством в заведении
+
+          .fr_1.m-2
+            .text_x1.mb-1
+              span(style="color: #37b44a;") _ 
+              | Manager
+            p Удобный менеджерский модуль - позволяет совершать различные операции, например разделить счёт или оставить комментарий к заказу для повара
+
+
+        
+      .item-b.white.bold.flex_col.x_sb
+        
+        .BG.p-1.mb-3.text_x1 Оборудование рабочиx мест кассиров и официантов
+        .BG.p-1.text_s1 POS-системы для работы кассира, РOS-системы для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
+
+        //- , Manager, StoreHouse
+
+        //- img(
+        //-   style="width: 100%;"
+        //-   :src="require(`@/static/fallout/fallout-robot.png`)"
+        //- )
+      .item-c.shadow
+        //- h1.mb-3 item-c
+        .center
+          .bold_900.text_x5 На связи 24/7
+          .text_x4 8(495)199-57-89
+          //- .bold_900.mb-3 Ничто не должно остановить работу заведения
+          .bold_900.text_x4
+            a(
+              href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+            ) WhatsApp
+            | &emsp;
+            a(
+              href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+            ) Telegram
+
+        
+        .mt-3.bold Если у вас возникла срочная проблема
+        .my-2 У нас всегда дежурят 2 IT-пециалиста. Вы можете вызвать техподдержку круглосутчно в любой день, включая праздники и выходные.
+        .my-2 Техподдержка срочно воостановить работу заведения
+        img(
+          style="width: 100%;"
+          src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+        )
+      .item-d
+        .bold_900.text_x3.mb-2 Установка оборудования
+        ul
+          li POS-система для работы кассира
+          li POS-система для работы официанта
+          li Фискальный регистратор
+          li Сервис-принтер
+          li Денежный ящик
+        //- p Настройка удаленного рабочего места
+        //- .my-3 Быстро и безопасно
+        //- p В подвале телефон  - 8(495)199-57-89 и кнопка заказать звонок (клик - всплывающая форма телефон и имя и, наверное, необязательным полем с “краткая информация по вопросу”)
       
-      .text_x3 Автоматизация ресторанов
-
-      .BG.mt_auto Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-      //- img(
-      //-   style="width: 100%;"
-      //-   :src="require(`@/static/fallout/fallout-robot.png`)"
-      //- )
-    .item-c
-      //- h1.mb-3 item-c
-      .bold_900.mb-1.text_x5 На связи 24/7
-      .mb-2.text_x4 8(495)199-57-89
-      .mb-3 Если у вас возникла срочная проблема, которая останавливает работу заведения
-      .mb-3 У нас всегда дежурят 2 IT-пециалиста. Вы можете им звонить круглосутчно в любой день, включая праздники и выходные.
-      .bold_900 Автоматизация ресторанов баров и кафе
-      .mb-3 Настройка удаленного рабочего места
-      //- p Быстро и безопасно
-      img(
-        style="width: 100%;"
-        src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
-      )
-    .item-d
-      h1.mb-3 item-d
-      p В подвале телефон  - 8(495)199-57-89 и кнопка заказать звонок (клик - всплывающая форма телефон и имя и, наверное, необязательным полем с “краткая информация по вопросу”)
-    .item-e
-      h1.mb-3 item-e
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-    .item-f.white
-      h1.mb-3 item-f
-      p.mb-3 Digital audits, facilitated design thinking workshops, 
-    .item-g
-      h1.mb-3 item-g
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website 
-      p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-      h4 Blanditiis nisi commodi illo
-    .item-h
-      h1.mb-3 item-h
-      .text_s1.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research
-      .mt-4.text_x2 Blanditiis nisi commodi illo
-      h2.text_s2 facilitated design thinking workshops, digital strategy development
-    .item-i
-      h1.mb-3 item-i
-      p.mb-3 Digital audits, facilitated design thinking workshops, 
+      .item-e
+        h1.mb-3 item-e
+        p.mb-3 _StoreHouse
+        p Программа складского учета _StoreHouse поможет полностью автоматизировать процесс управления производством в заведении
+      
+      .item-f.white
+        h1.mb-3 item-f
+        p.mb-3 Digital audits, facilitated design thinking workshops, 
+      
+      .item-g
+        h1.mb-3 item-g
+        p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website 
+        p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
+        h4 Blanditiis nisi commodi illo
+      
+      .item-h.shadow
+          .bold_900.text_x3.mb-2 Установка оборудования и ПО*
+          .flex
+            div
+              .bold оборудование
+              p POS-система для работы кассира, РOS-система для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
+            p ПО: r_keeper_7_CashDesk, r_keeper_7_Manager, r_keeper_7_StoreHouse
+      .item-i
+        h1.mb-3 item-i
+        p.mb-3 Digital audits, facilitated design thinking workshops, 
 
   .clients
     h2.text_x5.center.mb-3 Наши партнеры
@@ -88,7 +143,15 @@ export default {
 .BG {
   background: rgba(#000, 0.8);
   line-height: 1;
-  padding: 0 0.3em;
+  // padding: 0 0.3em;
+}
+
+.filter_1 {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.shadow {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 img {
@@ -105,23 +168,27 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     /* grid-template-rows: repeat(auto-fill, minmax(180px,1fr)); */
     grid-auto-flow: dense;
-    grid-gap: 20px;
+    grid-gap: 3em;
     align-items: center;
   }
 }
 
 @media (max-width: 420px) {
   .clients_grid {
+    grid-gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   }
 }
 
-.grid {
-  padding: 1.4em;
+.wrap {
   max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.4em;
+}
+
+.grid {
   display: grid;
   grid-gap: 1em;
-  margin: 2rem auto;
 }
 
 .grid > div {
@@ -133,11 +200,11 @@ img {
 }
 
 .item-a {
-  background: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&h=300&q=80');
+  background: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&&q=80') center / cover no-repeat;
 }
 
 .item-b {
-  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80') 0 0 / cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80') 0 0 / cover no-repeat;
 }
 
 .item-f {

@@ -3,17 +3,21 @@
 #layout
   #layout_footer.flex.y_center.x_sb
     //- © 2020 Anykey.eXpert
-    | Anykey.eXpert 
-      
-    .bold_900
-      //- span.blink _> 
-      a.mx-3(
-        href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
-      ) WhatsApp
+    b ANYKEY.EXPERT
 
-      a(
-        href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
-      ) Telegram
+    img(
+      style="width:32px"
+      src="https://icongr.am/clarity/step-forward-2.svg"
+    )
+      
+    //- .bold_900
+    //-   a.mx-3(
+    //-     href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+    //-   ) WhatsApp
+
+    //-   a(
+    //-     href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+    //-   ) Telegram
   #layout_main 
     <nuxt />
     Footer
@@ -69,7 +73,7 @@ export default {
 #layout_footer {
   z-index: 10;
   grid-area: footer;
-  padding: 1em;
+  padding: 2px 1em;
   /* background-image: radial-gradient(
     at 300px 300px,
     rgba(159, 0, 191, 0.9) 0,
@@ -79,7 +83,7 @@ export default {
   color: #fff; */
   /* box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  font-family: 'Courier';
+  /* font-family: 'Courier'; */
 
   /* color: lime; */
 }
