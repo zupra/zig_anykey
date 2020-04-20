@@ -14,7 +14,7 @@ div
     //-     | ККМ по 54-ФЗ
 
     //-   h2 Автоматизация
-    .text_x5.bold_900 Автоматизация ресторанов баров и кафе
+    h1.text_x4.bold_900.mb-2 Автоматизация ресторанов, баров и кафе
     .grid
       .item-a.white.bold.flex_col.x_sb.shadow
         //- .text_x4
@@ -183,7 +183,7 @@ img {
 
 .wrap {
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1.4em;
 }
 
