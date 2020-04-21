@@ -2,42 +2,27 @@
 
 #layout
   #layout_footer.flex.y_center.x_sb
-    //- © 2020 Anykey.eXpert
     b ANYKEY.EXPERT
 
-    img(
-      style="width:32px"
-      src="https://icongr.am/clarity/step-forward-2.svg"
-    )
+    svg(width='58', height='44')
+      rect(x='14', y='6', width='30', height='32', fill='rgba(255, 255, 255, .5)', stroke='gold', stroke-width='2')
+      g(stroke='grey', stroke-width='4')
+        path(d='M5,14 L32,14')
+        path(d='M5,22 L26,22')
+        path(d='M5,30 L20,30')
+      polyline(points='50,10 36,22 50,34', fill='grey')
       
-    //- .bold_900
-    //-   a.mx-3(
-    //-     href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
-    //-   ) WhatsApp
+    //- 
+      a.mx-3(
+        href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+      ) WhatsApp
 
-    //-   a(
-    //-     href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
-    //-   ) Telegram
+      a(
+        href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+      ) Telegram
   #layout_main 
     <nuxt />
     Footer
-//-
-  #layout
-    #layout_main
-      <nuxt />
-    footer#layout_footer.flex.y_center.x_sb
-      //- Anykey.eXpert
-      p © 2020
-        span.blink _ >
-      div
-        a(
-          href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
-        ) WhatsApp
-
-        a.mx-3(
-          href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
-        ) Telegram
-
 
 </template>
 
@@ -73,7 +58,9 @@ export default {
 #layout_footer {
   z-index: 10;
   grid-area: footer;
-  padding: 2px 1em;
+  padding: 4px;
+  padding-left: 1em;
+
   /* background-image: radial-gradient(
     at 300px 300px,
     rgba(159, 0, 191, 0.9) 0,
@@ -86,8 +73,5 @@ export default {
   /* font-family: 'Courier'; */
 
   /* color: lime; */
-}
-#layout_footer a {
-  color: #9c27b0;
 }
 </style>

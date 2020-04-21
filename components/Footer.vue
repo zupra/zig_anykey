@@ -24,8 +24,10 @@
           href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
         ) Telegram
 
-      .mt-3 Круглосутчно дежурят 2 IT-специалиста. 
-      p Быстрое реагирование в течении 20 минут.
+      .mt-3 Круглосутчно дежурят 2 IT-специалиста.
+      p Если у вас возникла проблема которая останавливает работу заведения, то наш специалист срочно, в течении 10 минут начнет решать ее удаленно, или же выедет к вам
+      //- p Срочно реагируем на проблемы работы заведения
+      //- p Быстрое реагирование в течении 20 минут.
 
 
     .Socials-icon
@@ -58,8 +60,9 @@
 
 
   <SocIcon/>
-  //- #F_.mt-5.p-1
-  //-   | © 2020 
+  .center.p-3.mt-5.BG
+    | © 2020 anykey.expert
+
 </template>
 
 <script>
@@ -78,9 +81,11 @@ export default {
 #footer {
   margin-top: 5em;
   // background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
-  background: #333;
-  padding: 3em 0 5em;
+  background: #313131; // #122a35;
+  padding: 3em 0 0;
   color: #CCC;
+
+  // font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 
   // line-height: 1.6;
   h4 {
@@ -102,7 +107,7 @@ export default {
 
 /*  */
 #F_grid {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 1em;
   display: grid;
@@ -120,7 +125,7 @@ export default {
     white-space: nowrap;
 
     &:hover .icon {
-      background: rgba(#000 0.45);
+      background: rgba(#000 0.5);
     }
   }
 
@@ -133,7 +138,7 @@ export default {
     box-sizing: content-box;
     margin: 4px;
     fill: #FFF;
-    background: rgba(#EEE 0.2); // $header
+    background: rgba(#EEE 0.2);
   }
 }
 </style>

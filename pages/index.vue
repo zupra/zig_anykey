@@ -2,23 +2,47 @@
 div
 
   .wrap
-    //- .flex_wr.x_sb
-    //-   h1.text_x5
-    //-     //- span.BG
-    //-     | ЕГАИС
-    //-     br
-    //-     | R-Keeper
-    //-     br
-    //-     | StoreHouse
-    //-     br
-    //-     | ККМ по 54-ФЗ
+    h1.text_x5.bold_900 Автоматизация ресторанов, 
+      br
+      | баров и кафе
 
-    //-   h2 Автоматизация
-    h1.text_x4.bold_900.mb-2 Автоматизация ресторанов, баров и кафе
+
+
+
+      //-
+        .fr_1(
+          style="white-space: nowrap"
+        )
+          .ml-5.center
+            .bold_900.text_x2 24/7 Поддержка
+            //- На связи 24/7
+            .bold.text_x2 8(495)199-57-89
+            .bold_900.text_x1
+              a(
+                href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+              ) WhatsApp
+              | &emsp;
+              a(
+                href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+              ) Telegram
+          
+          //- .my-2 У нас всегда дежурят 2 IT-пециалиста.
+    //- p ЕГАИС, R-Keeper, StoreHouse, ККМ по 54-ФЗ
+
     .grid
-      .item-a.white.bold.flex_col.x_sb.shadow
+      .item-a.p-2.white.bold.flex_col.x_sb.shadow
         //- .text_x4
         //-   span.BG Автоматизация ресторанов баров и кафе
+
+        .mb-4.bold.BG
+          i.bold_900.text_x2 24/7 
+          | 8(495)199-57-89
+          a.mx-1(
+            href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+          ) WhatsApp
+          a(
+            href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+          ) Telegram
         
         img.filter_1(
           src='https://static.tildacdn.com/tild3631-3632-4339-b131-663633663838/_.png'
@@ -32,89 +56,129 @@ div
 
           .BG.fr_1.m-1.p-1
             .text_x1.mb-1
-              span(style="color: #37b44a;") _ 
+              span(style="color: #37b44a;") _
               | StoreHouse
             p Программа складского учета поможет полностью автоматизировать процесс управления производством в заведении
 
           .BG.fr_1.m-1.p-1
             .text_x1.mb-1
-              span(style="color: #37b44a;") _ 
+              span(style="color: #37b44a;") _
               | Manager
             p Mодуль позволяет совершать различные менеджерские операции, например разделить счёт или оставить комментарий к заказу для повара
 
 
         
-      .item-b.white.bold.flex_col.x_sb
+      .item-b.p-3.white.bold.flex_col.x_sb
         
-        .BG.p-1.mb-5.text_x1 Оборудование рабочиx мест кассиров и официантов
-        .BG.p-1.mt-5.text_s1 POS-системы для работы кассира, РOS-системы для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
+        .mb-5.text_x2 
+          span.BG Оборудование рабочиx мест кассиров и официантов
+        //- .BG.p-1.mt-5.text_s1 POS-системы для работы кассира, РOS-системы для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
+        .mt-5.text_x2
+          span.BG Эффективная работа персонала
+        //- блокирующие (кассовые) инциденты
 
-        //- , Manager, StoreHouse
-
-        //- img(
-        //-   style="width: 100%;"
-        //-   :src="require(`@/static/fallout/fallout-robot.png`)"
-        //- )
-      .item-c.shadow
+      .item-c.p-3
         //- h1.mb-3 item-c
-        .center
-          .bold_900.text_x5 На связи 24/7
-          .text_x4 8(495)199-57-89
-          //- .bold_900.mb-3 Ничто не должно остановить работу заведения
-          .bold_900.text_x4
-            a(
-              href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
-            ) WhatsApp
-            | &emsp;
-            a(
-              href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
-            ) Telegram
+        //- 
+          .center
+            .bold_900.text_x5 На связи 24/7
+            p срочно реагируем на проблемы
+            .text_x4 8(495)199-57-89
+            //- .bold_900.mb-3 Ничто не должно остановить работу заведения
+            .bold_900.text_x3
+              a(
+                href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+              ) WhatsApp
+              | &emsp;
+              a(
+                href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+              ) Telegram
+            .my-2 У нас всегда дежурят 2 IT-пециалиста.
 
-        
-        .mt-3.bold Если у вас возникла срочная проблема
-        .my-2 У нас всегда дежурят 2 IT-пециалиста. Вы можете вызвать техподдержку круглосутчно в любой день, включая праздники и выходные.
-        .my-2 Техподдержка срочно воcстановить работу заведения
+        h4.mb-1.bold_900 ЕГАИС, R-Keeper, StoreHouse, ККМ по 54-ФЗ
+        //- p У нас круглосутчно дежурят 2 IT-пециалиста. 
+        //- Вы можете всегда вызвать техподдержку круглосутчно в любой день, включая праздники и выходные.
+        .text_s1 Наши специалисты находятся на связи 24/7, круглосуточно, включая выходные и праздничные дни. Специалисты техподдержки готовы в любое время, в срочном порядке решить вашу проблему
+        .mb-2 Техподдержка в течении 20 минут реагирует на проблемы.
+        //- блокирующих кассовыx инцидентов.
+        .flex.x_sb.bold_900.mb-3 
+          | 8(495)199-57-89
+          a.mx-1(
+            href="https://chat.whatsapp.com/IjMFGwBS3ZnArTe7VqE6gm"
+          ) WhatsApp
+          a(
+            href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
+          ) Telegram
+        //- .mt-3.bold Если у вас возникла срочная проблема
+        //- .my-2 У нас всегда дежурят 2 IT-пециалиста. Вы можете вызвать техподдержку круглосутчно в любой день, включая праздники и выходные.
+        //- .my-2 Техподдержка срочно воcстановить блокирующие (кассовые) инциденты
         img(
-          style="width: 100%;"
-          src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+          src="https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=70"
         )
-      .item-d
-        .bold_900.text_x3.mb-2 Установка оборудования
-        ul.ml-1.text_x2
-          li POS-система для работы кассира
-          li POS-система для работы официанта
-          li Фискальный регистратор
-          li Сервис-принтер
-          li Денежный ящик
+      .item-d.text_s2
+        h3.bold_900.text_x3.mb-2 Оборудование
+        .bold Установка, продажа, ремонт
+        .mb-3 Индивидуальный подбор оборудования под запросы и потребности.
+        .mb-3 POS-оборудование, оргтехника, расходные материалы.
+
+        //- ul.ml-1.text_x2
+        //-   li POS-система для работы кассира
+        //-   li POS-система для работы официанта
+        //-   li Фискальный регистратор
+        //-   li Сервис-принтер
+        //-   li Денежный ящик
+
+        //- .mb-2 C r_keeper ресторатору доступны все необходимые инструменты управления залом, складом и производством.
+        //- .mb-2 Удобно считать и отслеживать складские остатки, взаимодействовать с поставщиками, получать комплексные отчеты и управлять бухгалтерским и налоговым учетом.
+        // - p То же касается склада и кухни — вы всегда знаете, сколько продуктов должно быть на складе и сколько весит каждое блюдо
         //- p Настройка удаленного рабочего места
         //- .my-3 Быстро и безопасно
         //- p В подвале телефон  - 8(495)199-57-89 и кнопка заказать звонок (клик - всплывающая форма телефон и имя и, наверное, необязательным полем с “краткая информация по вопросу”)
       
-      .item-e
-        h1.mb-3 item-e
-        p.mb-3 _StoreHouse
-        p Программа складского учета _StoreHouse поможет полностью автоматизировать процесс управления производством в заведении
-      
-      .item-f.white
-        h1.mb-3 item-f
-        p.mb-3 Digital audits, facilitated design thinking workshops, 
+      .item-e.text_s2
+        h3.bold_900.text_x3.mb-2 StoreHouse
+        //- .mb-2 Программа StoreHouse решает задачу по учёту складских остатков и контролю списания товаров. В Store House ведутся калькуляционные карты, а также технологические и технико-технологические карты, рассчитывается калорийность блюд.
+        //- Программа StoreHouse позволяет осуществлять полный контроль расходования продуктов, эффективно управлять себестоимостью, правильно организовать закупки, контролировать действия персонала
+        p R-Keeper передает информацию о продажах в StoreHouse, которая в свою очередь сводит воедино приход, расход, составляет технологические карты приготовления блюд, также производит расчет калькуляции каждого из них и расчет остатков на складе.
+      .item-f.p-2.white
+        .bold.mb-2 Облачные решения
+        p Хранение и поддержка серверов rkeeper, iiko, storehouse, 1c.
+        p Из любой точки земли можно зайти в систему и увидеть полную картину бизнеса. 
       
       .item-g
-        h1.mb-3 item-g
-        p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website 
-        p.mb-3 Digital audits, facilitated design thinking workshops, digital strategy development, campaign and website analytics, user research, content strategy development, user scenarios and persona development and media strategy.
-        h4 Blanditiis nisi commodi illo
+        h3.mb-3 Сертификаты
+        p Получение, продление и поддержка любых электронных подписей, включая ЕГАИС и сертификаты для регистрации на сайте ФНС. Подготовка рабочего места для работы с сертификатом, регистрация на государственных порталах
       
-      .item-h.shadow
-          .bold_900.text_x3.mb-2 Установка оборудования и ПО*
-          .flex
-            div
-              .bold оборудование
-              p POS-система для работы кассира, РOS-система для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
-            p ПО: r_keeper_7_CashDesk, r_keeper_7_Manager, r_keeper_7_StoreHouse
+      .item-h
+          .bold_900.text_x1.mb-2 ЕГАИС, R-Keeper, StoreHouse, ККМ по 54-ФЗ
+          .mb-2 Ресторатору доступны все необходимые инструменты управления залом, складом и производством.
+          .mb-2 Удобно считать и отслеживать складские остатки, взаимодействовать с поставщиками, получать комплексные отчеты и управлять бухгалтерским и налоговым учетом.
+          //- .flex
+          //-   div
+          //-     .bold оборудование
+          //-     p POS-система для работы кассира, РOS-система для работы официанта, Фискальный регистратор, Сервис-принтер, Денежный ящик
+          //-   p ПО: r_keeper_7_CashDesk, r_keeper_7_Manager, r_keeper_7_StoreHouse
       .item-i
-        h1.mb-3 item-i
-        p.mb-3 Digital audits, facilitated design thinking workshops, 
+        h3.mb-2 Организация удаленного доступа
+        p.mb-3 Настройка удаленного рабочего места. Создание безопасных VPN туннелей для удаленной работы из любой точки
+
+
+    h3.center.bold_900.text_x3.my-4 Установка, продажа и ремонт оборудования
+
+
+
+    .Grid(style="--columns: 3;")
+      .Grid_item.border_odd_y
+
+        h3.mb-3.text_x1.mb_2 POS-системы
+        p для работы официанта, для работы кассира
+      .Grid_item.border_odd_y
+        h3.mb-3.text_x1.mb_2 Фискальные регистраторы
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
+      .Grid_item.border_odd_y
+        h3.mb-3.text_x1.mb_2 Сервис-принтеры
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi commodi illo perspiciatis? Explicabo, corrupti.
+
 
   .clients
     h2.text_x5.center.mb-3 Наши партнеры
@@ -142,7 +206,7 @@ export default {
 
 <style lang="stylus">
 .BG {
-  background: rgba(#000, 0.8);
+  background: #122a35; // rgba(#000, 0.8);
   line-height: 1;
   // padding: 0 0.3em;
 }
@@ -163,6 +227,8 @@ img {
 .clients {
   background-color: #fffff9;
   padding: 2.2em 1.4em;
+  max-width: 1600px;
+  margin: 0 auto;
 
   &_grid {
     display: grid;
@@ -181,8 +247,25 @@ img {
   }
 }
 
+// Установка оборудования
+.Grid {
+  --columns: auto-fit;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+
+  &_item {
+    padding: 0.5em 1em 1em;
+  }
+}
+
+.border_odd_y {
+  & + & {
+    border-left: 1px solid #CCC;
+  }
+}
+
 .wrap {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 1rem auto;
   padding: 1em;
 }
@@ -192,6 +275,7 @@ img {
   grid-gap: 1em;
 }
 
+/*
 .grid > div {
   padding: 1em;
   border: 1px solid #ccc;
@@ -199,17 +283,29 @@ img {
   // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
   // box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12);
 }
-
+*/
 .item-a {
-  background: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&&q=80') center / cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&&q=70') center / cover no-repeat;
 }
 
 .item-b {
-  background: url('https://images.unsplash.com/photo-1523529364348-e930dcb39642?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80') 0 0 / cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1556742393-d75f468bfcb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=70') center / cover no-repeat;
+}
+
+.item-c {
+  // background-color: #000;
+  // background-image: radial-gradient(
+  // at 300px 300px,
+  // rgba(159, 0, 191, 0.9) 0,
+  // #4d4fa7 70%
+  // );
+  background: linear-gradient(to bottom, #4d3e67, #8f76bc);
+  color: #FFF;
 }
 
 .item-f {
-  background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80') center / cover no-repeat;
+  background-color: #8f76bc;
+  // background: url('https://images.unsplash.com/photo-1529604278261-8bfcdb00a7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80') center / cover no-repeat;
 }
 
 @media (min-width: 860px) {
