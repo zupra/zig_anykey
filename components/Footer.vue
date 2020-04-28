@@ -24,53 +24,19 @@
           href="https://t.me/joinchat/AGrzUxpLIxO-2vYeBcqxlA"
         ) Telegram
 
-      .mt-3 Круглосутчно дежурят 2 IT-специалиста.
-      p Если у вас возникла проблема которая останавливает работу заведения, то наш специалист срочно, в течении 10 минут начнет решать ее удаленно, или же выедет к вам
-      //- p Срочно реагируем на проблемы работы заведения
-      //- p Быстрое реагирование в течении 20 минут.
+      .mt-3 Круглосуточно дежурят 2 IT-специалиста.
+      p Быстрая реакция техподдержки на заявку
+      // - Если у вас возникла проблема которая останавливает работу заведения, то наш специалист срочно, в течении 10 минут начнет решать ее удаленно, или же выедет к вам
 
 
-    .Socials-icon
-      h4 Поделиться
-      div  
-        a(href="/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_twitter')
-          | twitter
-      div  
-        a(href="/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_vk')
-          | vkontakte
-      div  
-        a(href="/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_fb')
-          | facebook
-      div  
-        a(href="/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_googleplus')
-          | Gplus
-      div  
-        a(href="/#")
-          svg.icon
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#icon_ok')
-          | odnoklassniki
-
-
-  <SocIcon/>
   .center.p-3.mt-5.BG
     | © 2020 anykey.expert
 
 </template>
 
 <script>
-import SocIcon from '~/components/SocIcon.vue'
 export default {
-  components: {
-    SocIcon
-  },
+  components: {},
   data() {
     return {}
   }
@@ -81,7 +47,7 @@ export default {
 #footer {
   margin-top: 5em;
   // background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
-  background: #313131; // #122a35;
+  background: #262228; // #313131; // #122a35;
   padding: 3em 0 0;
   color: #CCC;
 

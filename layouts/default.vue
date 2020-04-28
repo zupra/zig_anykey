@@ -4,13 +4,13 @@
   #layout_footer.flex.y_center.x_sb
     b ANYKEY.EXPERT
 
-    svg(width='58', height='44')
-      rect(x='14', y='6', width='30', height='32', fill='rgba(255, 255, 255, .5)', stroke='gold', stroke-width='2')
-      g(stroke='grey', stroke-width='4')
-        path(d='M5,14 L32,14')
-        path(d='M5,22 L26,22')
-        path(d='M5,30 L20,30')
-      polyline(points='50,10 36,22 50,34', fill='grey')
+    //- svg(width='58', height='44')
+    //-   rect(x='14', y='6', width='30', height='32', fill='rgba(255, 255, 255, .5)', stroke='gold', stroke-width='2')
+    //-   g(stroke='grey', stroke-width='4')
+    //-     path(d='M5,14 L32,14')
+    //-     path(d='M5,22 L26,22')
+    //-     path(d='M5,30 L20,30')
+    //-   polyline(points='50,10 36,22 50,34', fill='grey')
       
     //- 
       a.mx-3(

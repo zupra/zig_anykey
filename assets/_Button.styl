@@ -1,7 +1,69 @@
 // >>> ACTIONS ====
 
-$blue = #1fb6ff
+// $blue = #1fb6ff
 
+
+
+$reset()
+  /* сброс стилей */
+  // padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  /* небольшие вертикальные отступы */
+  // margin: 2px 0;
+
+  /* сброс браузерных стилей для фокуса */
+  outline: none;
+
+/* сброс браузерных стилей для фокуса */
+.btn::-moz-focus-inner {
+  border: none;
+}
+
+.btn {
+  $reset()
+  
+  /* переопределение стилей для ссылок */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* невидимая рамка */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* для установки размеров используем паддинги */
+  padding: 0.5em 1em;
+
+  /* контрастные цвета */
+  color: #ffffff;
+  background-color: #9555af;
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  //.btn:focus 
+  &:hover {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+    // background-color #2b2b2b
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
 a, .link
   color $blue
   // text-decoration: none
@@ -59,3 +121,6 @@ button, .btn
     background #e4e4e4
     color #262626 !important
     cursor wait //progress
+
+
+*/
